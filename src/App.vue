@@ -1,19 +1,26 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <img alt="Vue logo" src="./assets/logo.png" />
+    <HelloWorld msg="Star rating component demo" />
+    <StarRating ratio="1" />
+    <StarRating ratio="2" />
+    <StarRating ratio="3" />
+    <StarRating ratio="4" />
+    <StarRating ratio="5" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import HelloWorld from "./components/HelloWorld.vue";
+import StarRating from "./components/StarRating.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    HelloWorld,
+    StarRating,
+  },
+};
 </script>
 
 <style>
